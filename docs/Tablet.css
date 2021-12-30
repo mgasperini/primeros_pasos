@@ -1,71 +1,61 @@
-body {
-  font-size: 1.6rem;
-}
+@media (orientation: portrait) {
+  body {
+    font-size: 1.6rem;
+  }
 
-main {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-  background-size: 900px 700px;
+  main {    
+    width: 100vw;
+    min-width: 450px;
+    height: calc(100vh - 17vh);
+  }
 
-  width: 100vw;
-  min-width: 450px;
-  height: calc(100vh - 14vh);
-}
+  aside {
+    margin: auto;
+  }
 
-aside {
-  margin: 0;
-  height: calc(100vh - 14vh);
-  align-self: flex-end;
+  .main-text {
+    font-size: 2.6rem;
+    margin: auto;
+    order: -1;
+    align-self: unset;
+    height: auto;
+    width: 70vw;
+  }
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 12vw;
-  min-width: 50px;
-  background-color: var(--color-brown-sugar);
-  align-items: center;
-}
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 11vw;
+    min-width: 50px;
+    height: 25vw;
 
-.main-text {
-  font-size: 2.6rem;
-  margin: auto;
-  order: -1;
-}
+    font-size: 1rem;
+    color: var(--color-brown-sugar);
+    font-weight: bold;
+  }
 
-.card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  width: 11vw;
-  min-width: 50px;
-  height: 25vw;
+  main .imagen-producto .imagenes {
+    width: 10vw;
+  }
 
-  font-size: 1rem;
-  color: var(--color-brown-sugar);
-  font-weight: bold;
-}
+  footer {
+    display: flex;
+    width: 100vw;
+    height: 7vh;
+    min-height: 30px;
+    background-color: var(--color-coffee);
+  }
 
-main .imagen-producto .imagenes {
-  width: 10vw;
-}
+  .rs {
+    height: 5vh;
+    margin-left: 50px;
+  }
 
-footer {
-  display: flex;
-  width: 100vw;
-  height: 7vh;
-  min-height: 30px;
-  background-color: var(--color-coffee);
-}
-
-.rs {
-  height: 5vh;
-  margin-left: 50px;
-}
-
-.boton-rs {
-  display: flex;
-  color: white;
-  margin-top: 1vh;
+  .boton-rs {
+    display: flex;
+    color: white;
+    margin-top: 1vh;
+  }
 }

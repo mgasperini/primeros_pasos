@@ -1,69 +1,72 @@
-header .header-logo {
-  width: 15vw;
-  padding: 1vh 0 1vh 2vw;
-}
+@media(orientation:landscape){
 
-main {
-  display: flex;
-  flex-direction: column;
-  background-size: 100vw;
-  background-attachment: scroll;
-  width: 100vw;
-  min-width: 800px;
-  height: calc(100vh - 14vh);
-}
+  body{
+    font-size: 1.6rem;
+  }
 
-aside {
-  display: flex;
-  align-self: auto;
-  flex-direction: row;
-  align-items: center;
-  background-color: #9c664486;
-  order: 1;
-  height: 20vw;
-  min-height: 125px;
-  margin: auto;
-  width: 100vw;
-}
+  header .header-logo {
+    padding: 1vh 0 1vh 2vw;
+  }
 
-.main-text {
-  font-size: 2.6rem;
-  margin: auto;
-  order: -1;
-}
+  main {
+    display: flex;
+    flex-direction: column;
+    background-size: 100vw;
+    background-attachment: scroll;
+    width: 100vw;
+    min-width: 800px;
+    height: calc(100vh - 17vh);
+  }
 
-.card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  width: 11vw;
-  min-width: 50px;
-  height: 18vw;
-  font-size: 1rem;
-  color: var(--color-brown-sugar);
-  font-weight: bold;
-}
+  aside {
+    align-self: auto;
+    flex-direction: row;
+    order: 1;
+    height: 20vw;
+    min-height: 125px;
+    margin: auto;
+    width: 100vw;
+  }
 
-/* main .imagen-producto .imagenes {
+  .main-text {
+    font-size: 2.6rem;
+    margin: auto;
+    order: -1;
+  }
+
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 11vw;
+    min-width: 50px;
+    height: 18vw;
+    font-size: 1rem;
+    color: var(--color-brown-sugar);
+    font-weight: bold;
+  }
+
+  /* main .imagen-producto .imagenes {
   width: 10vw;
 } */
 
-footer {
-  display: flex;
-  width: 100vw;
-  height: 7vh;
-  min-height: 30px;
-  background-color: var(--color-coffee);
-}
+  footer {
+    display: flex;
+    width: 100vw;
+    height: 7vh;
+    min-height: 30px;
+    background-color: var(--color-coffee);
+  }
 
-.rs {
-  height: 5vh;
-  margin-left: 50px;
-}
+  .rs {
+    height: 5vh;
+    margin-left: 50px;
+  }
 
-.boton-rs {
-  display: flex;
-  color: white;
-  margin-top: 1vh;
+  .boton-rs {
+    display: flex;
+    color: white;
+    margin-top: 1vh;
+  }
 }

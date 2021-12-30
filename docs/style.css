@@ -16,6 +16,7 @@
 html {
   font-size: 62.5%;
 }
+
 body {
   font-size: 1rem;
 }
@@ -25,13 +26,13 @@ header {
   width: 100vw;
   align-items: center;
   background-color: var(--color-desert-sand);
-  height: 7vh;
+  height: 10vh;
   justify-content: space-between;
   align-items: center;
 }
 
 header .header-logo {
-  width: 35vw;
+  width: 25vw;
   padding: 1vh 0 1vh 2vw;
 }
 
@@ -59,11 +60,10 @@ nav li:nth-child(4) a {
 
 main {
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   background-image: url("imagenes/Alimentos_saludables.jpg");
-  background-size: auto 100vh;
-  height: calc(100vh - 7vh - 7vh);
+  background-size: auto;
+  height: calc(100vh - 10vh - 7vh);
   background-repeat: space;
 }
 
@@ -71,7 +71,7 @@ main {
   display: flex;
   padding: 15px;
   width: 80vw;
-  margin-top: 2vh;
+  margin: auto;
   align-self: center;
 
   background-color: white;
@@ -85,18 +85,16 @@ main {
   font-size: 2rem;
   text-align: center;
   align-items: center;
-  order:0;
 }
 
 aside {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   background-color: #9c664486;
-  order: 1;
-  height: 30vw;
-  min-height: 125px;
-  margin-top: 1vh;
+  height: auto;
+  width: 20vh;
 }
 
 .card {
@@ -104,31 +102,29 @@ aside {
   align-items: center;
   justify-content: center;
   background-color: rgb(255, 255, 255);
-  margin-left: 0.5vw;
-  width: 19vw;
-  height: 25vw;
-  min-height: 105px;
+  margin: auto;
+  width: 18vh;
 
   border-radius: 10px;
   box-shadow: 2px 2px 10px 2px rgba(36, 36, 36, 0.3);
 
   text-align: center;
-  font-size: 1.0rem;
+  font-size: 1rem;
   color: var(--color-brown-sugar);
   font-weight: bold;
 }
 
-main .imagen-producto{
+main .imagen-producto {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
 }
 
-
-
 main .imagen-producto .imagenes {
-  width: 12vw;
+  width: 8vw;
+  padding: 1vh 0;
 }
 
 footer {
@@ -143,7 +139,7 @@ footer {
 
 .rs {
   height: 5vh;
-  margin:auto 5vw;
+  margin: auto 5vw;
 }
 
 .boton-rs {
@@ -152,4 +148,38 @@ footer {
   margin-top: 1vh;
 }
 
+@media (min-height: 300px) and (orientation: portrait) {
 
+  header .header-logo {
+    width: 40vw;
+  }
+
+  main{
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  aside {
+    flex-direction: row;
+    height: 25vh;
+    width: 100vw;
+    order:1;
+  }
+
+  .card{
+    width: 15vw;
+    margin-left: 1vw;
+    height: 20vh;
+  }
+
+  main .imagen-producto .imagenes {
+    width: 14vw;
+    padding: 1vh 0;
+  }
+
+  .main-text{
+    font-size: 1.9rem;
+    height: 50vh;
+    width: 70vw;
+    margin: 0;
+  }
+}
